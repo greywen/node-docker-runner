@@ -1,0 +1,21 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "lib": ["ES6", "ES7", "ESNext"],
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "removeComments": true,
+    "importHelpers": true,
+    "preserveConstEnums": true
+  },
+  "exclude": ["node_modules", "lib", "test"],
+  "include": ["./src/**/*.ts", "src/index.ts"]
+}

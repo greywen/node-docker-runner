@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "javascript",
+    "version": "v16.17.0",
+    "memory": 4096,
+    "image": "node",
+    "cpuset": "0-3",
+    "timeout": 20,
+    "fileName": "index.js",
+    "beforInjectionCodeCmd": "",
+    "afterInjectionCodeCmd": "node index.js",
+    "captureCode": "",
+    "initialCode": "console.log('Hello World!');"
+  },
+  {
+    "id": 2,
+    "name": "typescript",
+    "version": "v4.7.4",
+    "memory": 4096,
+    "image": "typescript",
+    "cpuset": "0-3",
+    "timeout": 20,
+    "fileName": "index.ts",
+    "beforInjectionCodeCmd": "",
+    "afterInjectionCodeCmd": "ts-node index.ts",
+    "captureCode": "",
+    "initialCode": "console.log('Hello World!');"
+  },
+  {
+    "id": 3,
+    "name": "csharp",
+    "version": "v6.0.302",
+    "memory": 4096,
+    "image": "dotnet",
+    "cpuset": "0-3",
+    "timeout": 20,
+    "fileName": "Program.cs",
+    "beforInjectionCodeCmd": "cd code",
+    "afterInjectionCodeCmd": "dotnet build && dotnet ./bin/Debug/net6.0/code.dll",
+    "captureCode": "",
+    "initialCode": "Console.WriteLine(\"Hello World!\");"
+  }
+]
